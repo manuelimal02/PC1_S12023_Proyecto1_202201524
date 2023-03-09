@@ -771,6 +771,11 @@ public class Cotizacion_CompraJFrame extends javax.swing.JFrame {
         tarjetaTXT.setBackground(new java.awt.Color(255, 255, 255));
         tarjetaTXT.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         tarjetaTXT.setForeground(new java.awt.Color(0, 0, 0));
+        tarjetaTXT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tarjetaTXTActionPerformed(evt);
+            }
+        });
 
         cvvTXT.setBackground(new java.awt.Color(255, 255, 255));
         cvvTXT.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
@@ -1604,6 +1609,7 @@ public class Cotizacion_CompraJFrame extends javax.swing.JFrame {
         sb.append("<tr>");
         sb.append("<h5>").append("Tamaño Del Paquete: "+numeroPaquete).append("</h5>");      
         sb.append("<h5>").append("Número De Paquetes: "+tamanoPaquete).append("</h5>");   
+        sb.append("<h5>").append("Fecha De Envío: "+fechaEnvio).append("</h5>");  
         sb.append("<h5>").append("Total A Pagar: "+totalPago).append("</h5>");   
         sb.append("</tr>\n");
         //SE CIERRA
@@ -1645,6 +1651,10 @@ public class Cotizacion_CompraJFrame extends javax.swing.JFrame {
             e.printStackTrace();
         }
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void tarjetaTXTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tarjetaTXTActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tarjetaTXTActionPerformed
     public static String generaCotizacionHTML(String origen,String destino,String tamanoPaquete,String numeroPaquete,String PrecioEstandar, String PrecioEspecial) {
         StringBuilder sb = new StringBuilder();
         sb.append("<font font face=\"Verdana\">");

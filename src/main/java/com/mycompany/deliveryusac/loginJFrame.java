@@ -144,32 +144,39 @@ public class loginJFrame extends javax.swing.JFrame {
         String contra = passwordTXT.getText();
         
         if(correoTXT.getText().isEmpty()||passwordTXT.getText().isEmpty()){
-            JOptionPane.showMessageDialog(null, "Campos Vacíos, Debe Llenar todos los campos.", "LOGIN", JOptionPane.ERROR_MESSAGE); 
+            JOptionPane.showMessageDialog(null, "Campos Vacíos, Debe llenar todos los campos.", "LOGIN", JOptionPane.ERROR_MESSAGE); 
         }   
-        else if(usuario.equals("manuel") && contra.equals("1234")){      
+        else if(usuario.equals("ipc1_202201524@ipc1delivery.com") && contra.equals("202201524")){      
             Menu_AdminJFrame MenuA = new Menu_AdminJFrame();
             MenuA.setVisible(true);
             dispose();
             JOptionPane.showMessageDialog(null, "Bievenido Administrador", "LOGIN", JOptionPane.INFORMATION_MESSAGE);
-        }else if(!usuario.equals("manuel") && !contra.equals("1234")){
+        }else if(!usuario.equals("ipc1_202201524@ipc1delivery.com") && !contra.equals("202201524")){
+            
             boolean existe=false;
             for (int i=0;i<AppState.listaUsuario.size();i++){
-                if (correoTXT.getText().toString().equals(AppState.listaUsuario.get(i).getcorreo().toString())==true){
+                if (correoTXT.getText().toString().equals(AppState.listaUsuario.get(i).getcorreo().toString())==true||passwordTXT.getText().toString().equals(AppState.listaUsuario.get(i).getpassword().toString())==true){
                     existe=true;
                     break;
                 }
             }
             if(existe){
+                boolean validarUsuario=false;
                 for (int i=0;i<AppState.listaUsuario.size();i++){
                     if (correoTXT.getText().toString().equals(AppState.listaUsuario.get(i).getcorreo().toString())==true&&passwordTXT.getText().toString().equals(AppState.listaUsuario.get(i).getpassword().toString())==true){
-                        Menu_UsuarioJFrame MenuUsuario = new Menu_UsuarioJFrame();
-                        MenuUsuario.setVisible(true);
-                        String correo1 = correoTXT.getText();
-                        MenuUsuario.correoTXT.setText(correo1);
-                        dispose();
-                        JOptionPane.showMessageDialog(null, "Bievenido Usuario", "LOGIN", JOptionPane.INFORMATION_MESSAGE);
+                        validarUsuario=true;
                         break;
                     }
+                }
+                if(validarUsuario){
+                    Menu_UsuarioJFrame MenuUsuario1 = new Menu_UsuarioJFrame();
+                    MenuUsuario1.setVisible(true);
+                    String correo1 = correoTXT.getText();
+                    MenuUsuario1.correoTXT.setText(correo1);
+                    dispose();
+                    JOptionPane.showMessageDialog(null, "Bievenido Usuario", "LOGIN", JOptionPane.INFORMATION_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(null, "Correo o Contraseña Incorrectos USUARIO", "LOGIN", JOptionPane.WARNING_MESSAGE);   
                 }
             }else{
                 JOptionPane.showMessageDialog(null, "El correo no está registrado", "LOGIN", JOptionPane.WARNING_MESSAGE);
@@ -178,7 +185,7 @@ public class loginJFrame extends javax.swing.JFrame {
             }
         }
         else{
-            JOptionPane.showMessageDialog(null, "Correo o Contraseña Incorrectos", "LOGIN", JOptionPane.WARNING_MESSAGE);   
+            JOptionPane.showMessageDialog(null, "Correo o Contraseña Incorrectos ADMIN", "LOGIN", JOptionPane.WARNING_MESSAGE);   
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

@@ -20,5 +20,14 @@ public class DatosFacturacion {
     }
     public String getnit() {
         return nit;
-    }  
+    } 
+    public void setnombreCompleto(String nombreCompleto) {
+        this.nombreCompleto=nombreCompleto;
+    }
+    public void setdireccion(String direccion) {
+        this.direccion=direccion;
+    }
+    public void setnit(String nit) {
+        this.nit=nit;
+    }
 }

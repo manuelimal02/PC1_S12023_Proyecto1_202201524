@@ -1,5 +1,4 @@
 package com.mycompany.deliveryusac;
-
 import java.awt.*;
 import java.awt.event.ItemEvent;
 import java.io.File;
@@ -16,7 +15,7 @@ public class Registro_UsuarioJFrame extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setResizable(false);
         setTitle("REGISTRAR USUARIO");
-        
+
         kioscoTXT.setVisible(false);
         kioscoLB.setVisible(false);
         for(int i = 0; i < AppState.listaKiosco.size(); i++) {
@@ -210,16 +209,14 @@ public class Registro_UsuarioJFrame extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(fotoLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addComponent(fotoLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(11, Short.MAX_VALUE)
-                .addComponent(fotoLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(fotoLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jLabel14.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
@@ -268,16 +265,14 @@ public class Registro_UsuarioJFrame extends javax.swing.JFrame {
                             .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(fechaTXT, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
+                                        .addComponent(generoTXT, 0, 186, Short.MAX_VALUE))
+                                    .addComponent(jLabel8)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(fechaTXT, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
-                                                .addComponent(generoTXT, 0, 186, Short.MAX_VALUE))
-                                            .addComponent(jLabel8))
-                                        .addGap(28, 28, 28))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(21, 21, 21)))
+                                        .addGap(93, 93, 93)
+                                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(21, 21, 21)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -291,7 +286,7 @@ public class Registro_UsuarioJFrame extends javax.swing.JFrame {
                                                 .addComponent(telefonoTXT, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
                                                 .addComponent(rutaTXT, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
                                                 .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))))))
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -305,10 +300,10 @@ public class Registro_UsuarioJFrame extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel3))
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(correoTXT, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(correoTXT, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -351,7 +346,7 @@ public class Registro_UsuarioJFrame extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(rolTXT, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(kioscoTXT, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
@@ -363,15 +358,16 @@ public class Registro_UsuarioJFrame extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
        
-        if(fechaTXT.getDate() == null ||correoTXT.getText().isEmpty() || nombreTXT.getText().isEmpty() || apellidoTXT.getText().isEmpty() || contra1TXT.getText().isEmpty() || contra2TXT.getText().isEmpty() || dpiTXT.getText().isEmpty() || sobrenombreTXT.getText().isEmpty() || telefonoTXT.getText().isEmpty() /*|| rutaTXT.getText().isEmpty()*/){
+        if(fechaTXT.getDate() == null||correoTXT.getText().isEmpty() || nombreTXT.getText().isEmpty() || apellidoTXT.getText().isEmpty() || contra1TXT.getText().isEmpty() || contra2TXT.getText().isEmpty() || dpiTXT.getText().isEmpty() || sobrenombreTXT.getText().isEmpty() || telefonoTXT.getText().isEmpty() /*|| rutaTXT.getText().isEmpty()*/){
             JOptionPane.showMessageDialog(null, "Campos Vacíos, Debe llenar todos los campos.", "REGISTRAR USUARIO", JOptionPane.ERROR_MESSAGE); 
         }
         else{
-            String password =contra1TXT.getText();
+            String password1 =contra1TXT.getText();
+            String password2 =contra2TXT.getText();
             final int MAX=8, MIN_Uppercase=1, MIN_Lowercase=1, NUM_Digits=1, Special=1;
             int uppercaseCounter=0, lowercaseCounter=0, digitCounter=0, specialCounter=0; 
-            for (int i=0; i < password.length(); i++ ) {
-                char c = password.charAt(i);
+            for (int i=0; i < password2.length(); i++ ) {
+                char c = password2.charAt(i);
                 if(Character.isUpperCase(c)) 
                     uppercaseCounter++;
                 else if(Character.isLowerCase(c)) 
@@ -382,7 +378,7 @@ public class Registro_UsuarioJFrame extends javax.swing.JFrame {
                     specialCounter++;
                 }
             }
-            if (password.length()>= MAX && uppercaseCounter>= MIN_Uppercase && lowercaseCounter>= MIN_Lowercase && digitCounter>= NUM_Digits && specialCounter>= Special){ 
+            if (password2.length()>= MAX && uppercaseCounter>= MIN_Uppercase && lowercaseCounter>= MIN_Lowercase && digitCounter>= NUM_Digits && specialCounter>= Special&& password1.length()>= MAX){ 
                 boolean existe=false;
                 for (int i=0;i<AppState.listaUsuario.size();i++){
                     if (correoTXT.getText().equals(AppState.listaUsuario.get(i).getcorreo())==true){
@@ -400,7 +396,7 @@ public class Registro_UsuarioJFrame extends javax.swing.JFrame {
                     nuevoUsuario.correo=correo;
                     nuevoUsuario.nombre=nombre;
                     nuevoUsuario.apellido=apellido;
-                    nuevoUsuario.password=password;
+                    nuevoUsuario.password=password2;
                     nuevoUsuario.dpi=dpi;
                     nuevoUsuario.fechaNacimiento=fechaNacimiento;
                     nuevoUsuario.genero=genero;
@@ -425,7 +421,7 @@ public class Registro_UsuarioJFrame extends javax.swing.JFrame {
                     nuevoUsuario.correo=correo;
                     nuevoUsuario.nombre=nombre;
                     nuevoUsuario.apellido=apellido;
-                    nuevoUsuario.password=password;
+                    nuevoUsuario.password=password2;
                     nuevoUsuario.dpi=dpi;
                     nuevoUsuario.fechaNacimiento=fechaNacimiento;
                     nuevoUsuario.genero=genero;
@@ -442,7 +438,7 @@ public class Registro_UsuarioJFrame extends javax.swing.JFrame {
                     }
                     System.out.println("--------------------------------------------------------------------");
                 }   
-            }else if(password.equals(contra2TXT.getText())==false || contra2TXT.getText().equals(password)==false){      
+            }else if(!password1.equals(password2)||!password2.equals(password1)){      
                 JOptionPane.showMessageDialog(null, "Las Contraseñas No Coinciden", "REGISTRAR USUARIO", JOptionPane.WARNING_MESSAGE);
             }
             else{
@@ -458,7 +454,7 @@ public class Registro_UsuarioJFrame extends javax.swing.JFrame {
             File file= archivo.getSelectedFile();
             rutaTXT.setText(String.valueOf(file));
             Image foto = getToolkit().getImage(rutaTXT.getText());
-            foto = foto.getScaledInstance(110, 110, Image.SCALE_DEFAULT);
+            foto = foto.getScaledInstance(fotoLBL.getWidth(), fotoLBL.getHeight(), Image.SCALE_DEFAULT);
             fotoLBL.setIcon(new ImageIcon(foto));
         }
     }//GEN-LAST:event_jButton3ActionPerformed

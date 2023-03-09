@@ -7,7 +7,7 @@ public class Tarjeta {
     public String correo;
     public String nombre;
     public long numero;
-    public String fecha;;
+    public String fecha;
     
     public String getcorreo() {
         return correo;
@@ -20,5 +20,11 @@ public class Tarjeta {
     }
     public String getfecha() {
         return fecha;
+    }
+    public void setnumero(long numero) {
+       this.numero=numero;
+    }
+    public void setfecha(String fecha) {
+       this.fecha=fecha;
     }
 }

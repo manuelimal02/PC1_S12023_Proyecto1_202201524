@@ -78,7 +78,7 @@ public class KioscoJFrame extends javax.swing.JFrame {
         codigoRegionTXT.setBackground(new java.awt.Color(255, 255, 255));
         codigoRegionTXT.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         codigoRegionTXT.setForeground(new java.awt.Color(0, 0, 0));
-        codigoRegionTXT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "(M) Metropolitana", "(NT) Norte", "(NO) Nororiente", "(SO) Suroriente", "(SOC) Suroccidente", "(NOC) Noroccidente", " " }));
+        codigoRegionTXT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "(M) Metropolitana", "(NT) Norte", "(NO) Nororiente", "(SO) Suroriente", "(SOC) Suroccidente", "(NOC) Noroccidente" }));
 
         jButton1.setBackground(new java.awt.Color(110, 77, 252));
         jButton1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N

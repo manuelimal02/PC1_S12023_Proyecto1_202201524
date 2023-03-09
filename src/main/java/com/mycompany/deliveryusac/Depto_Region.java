@@ -21,4 +21,7 @@ public class Depto_Region {
     public String getmunicipio() {
         return municipio;
     }
+    public void setmunicipio(String municipio) {
+        this.municipio=municipio;
+    }
 }

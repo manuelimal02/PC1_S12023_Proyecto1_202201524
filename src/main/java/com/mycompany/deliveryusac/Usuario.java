@@ -61,4 +61,11 @@ public class Usuario {
     public void setcontadorPaquete(long contadorPaquete) {
         this.contadorPaquete=contadorPaquete;
     }
+    public void setfoto(ImageIcon foto) {
+        this.foto=foto;
+    }
+    public void setpassword(String password) {
+        this.password=password;
+    }
+    
 }
